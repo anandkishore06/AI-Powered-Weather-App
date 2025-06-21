@@ -27,7 +27,7 @@ WeatherNow is a beautifully designed, responsive weather application built with 
 
 ## 🚀 Demo
 
-**Live Preview:** [Your Live Site URL Here]
+**Live Preview:** [https://ai-powered-weather-app-kmai.onrender.com/]
 
 ---
 
