@@ -125,7 +125,8 @@ const Weather = () => {
     const [showMap, setShowMap] = useState(true);
     const [localTime, setLocalTime] = useState('');
 
-    const API_KEY = "aec487ea049aadda235b12abeaad8c7b";
+    const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
+
 
     useEffect(() => {
         localStorage.setItem('weatherAppTheme', theme);
@@ -288,7 +289,11 @@ const Weather = () => {
             setDailyForecastData(Object.values(dailyForecasts));
 
             setMapUrl(`https://maps.google.com/maps?q=${latitudeToUse},${longitudeToUse}&z=10&output=embed`);
-            const AI_API_KEY = "AIzaSyCpqF_lysZoH5e-jVACLddAEncwwXL6iN8"
+            const AI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+
+            if (!AI_API_KEY) {
+                console.error("OpenAI API key is missing!");
+            }
 
             const aiApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${AI_API_KEY}`;
 
