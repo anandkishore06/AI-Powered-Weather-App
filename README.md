@@ -2,7 +2,8 @@
 
 WeatherNow is a beautifully designed, responsive weather application built with **React** and enhanced with **AI-based recommendations**. It fetches live data from the **OpenWeatherMap API** and gives intelligent forecasts, clothing suggestions, and alerts with a sleek animated interface.
 
-![WeatherNow Screenshot](./screenshot.png) <!-- Optional: Add an actual screenshot -->
+![WeatherNow Screenshot](![image](https://github.com/user-attachments/assets/93dffab4-7055-48e0-a1e5-22a8a1039d01)
+) <!-- Optional: Add an actual screenshot -->
 
 ---
 
@@ -35,7 +36,7 @@ WeatherNow is a beautifully designed, responsive weather application built with 
 | Frontend   | API & Tools       | Styling       |
 |------------|-------------------|---------------|
 | React      | OpenWeatherMap API| Tailwind CSS  |
-| Framer Motion | EmailJS (optional) | Custom CSS Effects |
+| Framer Motion |   Animation    | Custom CSS Effects |
 | JSX        | GeoLocation API   | Gradient UI   |
 
 ---
@@ -54,10 +55,12 @@ cd weather-app
   
 ## Create .env File
 
+```bash
 VITE_OPENWEATHER_API_KEY=your_openweather_api_key
-OPENAI_API_KEY=your_openai_api_key
+GEMINIAI_API_KEY=your_openai_api_key
+```
 
-# Get your API key from https://openweathermap.org/api.
+### Get your API key from https://openweathermap.org/api. and Gemini API Key
 
 ## Run the App
 - npm start
